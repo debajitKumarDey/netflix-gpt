@@ -41,7 +41,8 @@ signOut(auth)
   
   }, [])
   return (
-    <div className='flex justify-between absolute w-full px-8 py-1 bg-gradient-to-b from-black z-10'>
+    <div className='flex justify-between absolute w-full
+     px-8 py-1 bg-gradient-to-b from-black z-10'>
       <img className='w-40' src={logo}
        alt="logo" />
     {user && (<div className='flex p-2 '>

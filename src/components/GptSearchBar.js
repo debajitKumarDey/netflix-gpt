@@ -43,14 +43,14 @@ const GptSearchBar = () => {
   };
 
   return (
-    <div className='pt-[8%] flex justify-center'>
-      <form className="w-1/2 bg-black grid grid-cols-12 rounded-lg" 
+    <div className='pt-[50%] md:pt-[10%] flex justify-center'>
+      <form className="w-full m-2 md:w-1/2 bg-black grid grid-cols-12 rounded-lg" 
       onSubmit={(e)=> e.preventDefault()}>
       
-        <input type="text" className='p-4 m-2 col-span-9 text-black rounded-md' 
+        <input type="text" className='p-1 md:p-4 m-2 col-span-8 md:col-span-9 text-black rounded-md' 
         placeholder={lang[langKey].gptPlaceholder} />
 
-        <button className="py-2 px-4 m-2 bg-red-700 col-span-3
+        <button className="md:py-2 md:px-4 m-2 bg-red-700 col-span-4 md:col-span-3
          text-white rounded-lg text-2xl font-medium"
          onClick={handleGptSearchclick}>
             {lang[langKey].search}</button>
